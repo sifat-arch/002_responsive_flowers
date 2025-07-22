@@ -58,13 +58,65 @@ nav {
   color: var(--title-color-1);
 }
 
+/* bannar section styles */
+.banner {
+  display: flex;
+  align-items: flex-end;
+  margin: 120px 0;
+}
+.banner-info {
+  flex: 1;
+}
+.banner-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 13px;
+}
+.s1 {
+  color: var(--title-color-1);
+}
+
+.s2 {
+  color: var(--title-color-2);
+}
+.banner-desc {
+  color: var(--desc-color);
+  font-size: 1.3rem;
+}
+.banner-img {
+  display: block;
+  flex: 1;
+  border: 1px dashed var(--desc-color);
+}
 /* responsive design for small screen */
 
 @media screen and (max-width: 576px) {
+  /* nav */
   nav {
-    padding: 16px;
+    padding: 7px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .nav img {
+    max-width: 100%;
   }
   .nav-links li:nth-child(-n + 3) {
     display: none;
+  }
+  .cart {
+    font-size: 1.8rem;
+  }
+  /* banner */
+  .banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0;
+  }
+  .banner-img {
+    max-width: 100%;
+    border: none;
+  }
+  .banner-info {
+    padding: 28px 16px;
   }
 }
