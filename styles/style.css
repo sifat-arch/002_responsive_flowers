@@ -137,6 +137,44 @@ nav {
   display: block;
   width: 100%;
 }
+
+/* flower and plant styles */
+.flower-and-plants {
+  display: flex;
+  margin-top: 210px;
+  gap: 60px;
+}
+.flower-image-container {
+  position: relative;
+}
+
+.img-1 {
+  border: 1px dashed var(--desc-color);
+}
+
+.img-2 {
+  max-width: 286px;
+  position: absolute;
+  top: -128px;
+  left: 345px;
+}
+
+.flower-info {
+  margin-top: 32px;
+}
+.flower-title {
+  font-size: 3.4rem;
+}
+.flower-info ul {
+  padding: 10px 30px;
+}
+.flower-info ul li {
+  font-size: 1.3rem;
+  color: var(--desc-color);
+  padding: 15px 0;
+  line-height: 27px;
+}
+
 /* responsive design for small screen */
 
 @media screen and (max-width: 576px) {
@@ -197,5 +235,34 @@ nav {
   }
   .card button {
     font-size: 0.7rem;
+  }
+
+  /* flower and plants */
+
+  .flower-and-plants {
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 41px;
+    padding: 20px;
+  }
+  .img-1 {
+    max-width: 100%;
+  }
+  .img-2 {
+    display: none;
+  }
+
+  .flower-title {
+    font-size: 1.5rem;
+  }
+
+  .flower-info ul {
+    padding: 15px 30px;
+  }
+
+  .flower-info ul li {
+    font-size: 0.8rem;
+    padding: 5px 0;
+    line-height: 18px;
   }
 }
