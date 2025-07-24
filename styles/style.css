@@ -201,7 +201,7 @@ nav {
 .image-container {
   display: flex;
   gap: 15px;
-  height: 403px;
+  min-height: 403px;
 }
 .image-contain {
   display: flex;
@@ -277,6 +277,94 @@ nav {
 
 /* responsive design for small screen */
 
+/* join section */
+footer {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.join {
+  margin-top: 120px;
+  height: 533px;
+}
+
+.join-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../assets/news-letter-bg.png");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 23px;
+}
+.subscribe {
+  display: flex;
+  width: 60%;
+}
+.join-title {
+  font-size: 3.1rem;
+  font-weight: 700;
+  color: var(--bg-title);
+}
+
+.subscribe input {
+  padding: 15px;
+  display: block;
+  width: 100%;
+  border: none;
+}
+
+/* footer section */
+.footer {
+  padding: 50px 160px;
+}
+.footer-container {
+  display: flex;
+  gap: 110px;
+  justify-content: space-between;
+}
+
+.container-1 {
+  flex: 1;
+}
+.container-1 p {
+  font-size: 1.3rem;
+  color: var(--desc-color);
+  margin-top: 16px;
+}
+.container-2 {
+  flex: 2;
+  display: flex;
+  gap: 110px;
+}
+.container-2 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.container-2 ul li {
+  list-style: none;
+}
+.container-2 ul li a {
+  text-decoration: none;
+  color: var(--desc-color);
+}
+.container-1 {
+  flex: 3;
+}
+
+.container-3 {
+  display: flex;
+  gap: 24px;
+}
+.container-3 img {
+  width: 33px;
+  height: 33px;
+  display: block;
+}
 @media screen and (max-width: 576px) {
   /* nav */
   nav {
@@ -393,20 +481,17 @@ nav {
   }
 
   .img-bg-1 {
-    height: 206px;
     border-radius: 10px;
   }
 
   .img-bg-2 {
-    height: 206px;
     border-radius: 10px;
   }
 
   .image-container-2 {
     max-width: 100%;
     border-radius: 10px;
-    padding: 50px 26px;
-    min-height: 206px;
+    padding: 54px 0;
   }
 
   .deals-title {
@@ -421,5 +506,40 @@ nav {
   }
   .image-container-2 a {
     font-size: 1rem;
+  }
+  /* join section */
+
+  .subscribe {
+    display: flex;
+    max-width: 70%;
+  }
+  .join-title {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .join {
+    height: 393px;
+  }
+  .subscribe input {
+    min-width: 140px;
+  }
+  .subscribe button {
+    padding: 10px 17px;
+  }
+
+  /* footer */
+  .footer {
+    padding: 20px;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .container-1 p {
+    font-size: 1rem;
+  }
+  .container-2 {
+    flex-direction: column;
+    gap: 24px;
   }
 }
