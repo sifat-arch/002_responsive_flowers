@@ -93,7 +93,6 @@ nav {
 .banner-img {
   display: block;
   flex: 1;
-  border: 1px dashed var(--desc-color);
 }
 
 /* our plants Section */
@@ -149,10 +148,6 @@ nav {
 }
 .flower-image-container {
   position: relative;
-}
-
-.img-1 {
-  border: 1px dashed var(--desc-color);
 }
 
 .img-2 {
